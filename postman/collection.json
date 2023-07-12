@@ -1,0 +1,42 @@
+{
+	"info": {
+		"name": "nestjs di test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "computer run",
+            "event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f5006bba-5e4e-4800-badf-8ae551840799",
+						"exec": [
+							"pm.test(\"check return value\", function () { var jsonData = pm.response.json(); console.log(jsonData);});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{endpoint}}/computer"
+			},
+			"response": []
+		}
+    ],
+    "variable": [
+		{
+			"key": "endpoint",
+			"value": "http://127.0.0.1:3000",
+			"type": "default"
+		}
+	]
+}
