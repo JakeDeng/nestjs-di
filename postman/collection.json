@@ -5,7 +5,7 @@
 	},
 	"item": [
 		{
-			"name": "computer run",
+			"name": "run computer test",
             "event": [
 				{
 					"listen": "test",
